@@ -31,7 +31,12 @@ a {
   text-decoration: none;
 }
 
-
+ul, ol, li {
+  list-style: none;
+}
+img{
+  vertical-align: middle;
+}
 .clear-fix::after {
   clear: both;
   content: '';
