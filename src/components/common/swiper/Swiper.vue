@@ -136,6 +136,8 @@ export default {
       if (this.slideCount > 1) {
         let cloneFirst = slidesEls[0].cloneNode(true);
         let cloneLast = slidesEls[this.slideCount - 1].cloneNode(true);
+        
+
         swiperEl.insertBefore(cloneLast, slidesEls[0]);
         swiperEl.appendChild(cloneFirst);
         this.totalWidth = swiperEl.offsetWidth;

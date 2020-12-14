@@ -3,7 +3,7 @@ import axios from "axios"
 
 const instance = axios.create({
 
-  baseURL: "接口可以加coderwhy老师微信coderwhy002",
+  baseURL: "http://152.136.185.210:8000/api/w6",
   timeout: 5000
 })
 instance.interceptors.response.use(data => {

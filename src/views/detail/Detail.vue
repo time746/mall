@@ -3,7 +3,7 @@
     <detail-nav-bar class="detail-nav" @navClick="navClick" ref="detailNav"></detail-nav-bar>
       <scroll class="detail-scroll" ref="scroll" @contentScroll="contentScroll" :probeType="2">
         <detail-swiper :topImages="topImages" v-show="topImages"></detail-swiper>
-        <!-- 网络不好会显示indefined 加个判断 -->
+        <!-- 网络不好会显示undefined 加个判断 -->
         <detail-base-info :goods="goods"  v-show="titleOffsetTop.length"></detail-base-info>
         <detail-shop-info :shopInfo="shopInfo"  v-show="titleOffsetTop.length"></detail-shop-info>
         <!-- 网络不好会显示nan 加个判断 -->
